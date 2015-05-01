@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Practice</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="/static/survey.css">
+
+
+</head>
+<body>
+<div class="">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#navbar"
+                        aria-expanded="false"
+                        aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Ubermelon</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+
+        <div class="">
+            <div id="profile">
+                <h2>Tell Us About Yourself</h2>
+
+                <form id="profile-form" method="POST">
+
+                    <div>
+                        <label>Name: </label>
+                        <input class="form-control" type="text" name="name"
+                               id="name-field"
+                               placeholder="First Last">
+                    </div>
+
+                    <div>
+                        <label>Age: </label>
+                        <input class="form-control" type="text" name="age"
+                               id="age-field"
+                               placeholder="Immortal">
+                    </div>
+
+                    <div>
+                        <label>Occupation: </label>
+                        <input class="form-control" type="text"
+                               name="occupation" id="occupation-field"
+                               placeholder="Superhero">
+                    </div>
+
+                    <div>
+                        <label>Salary: </label>
+                        <select name="salary">
+                            <option value="25-50k">$25,000 - 50,000</option>
+                            <option value="50-75k">$50,000 - 75,000</option>
+                            <option value="75-100k">$75,000 - 150,000</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Education Level: </label>
+                        <select name="education">
+                            <option value="High school">High School</option>
+                            <option value="College">College</option>
+                            <option value="Starfleet Academy">Starfleet
+                                Academy
+                            </option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>State: </label>
+                        <input class="form-control autocomplete" type="text"
+                               name="state" id="state-field"
+                               placeholder="Alaska">
+                    </div>
+
+                    <div>
+                        <label>City type: </label>
+                        <input type="checkbox" name="city" value="rural"> Rural
+                        <input type="checkbox" name="city" value="suburban">
+                        Suburban
+                        <input type="checkbox" name="city" value="urban"> Urban
+                    </div>
+
+                    <div>
+                        <label>Do you garden? </label>
+                        <input type="radio" name="garden" value="yes">Yes
+                        <input type="radio" name="garden" value="no">No
+                    </div>
+
+                    <div>
+                        <label>How many hours of TV do you watch? </label>
+                        <select name="tv">
+                            <option value="none">none</option>
+                            <option value="1-5">1 - 5 hours</option>
+                            <option value="5-10">5 - 10 hours</option>
+                            <option value="bingewatcher">I binge watch</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-primary" type="submit"
+                                id="submit-profile">Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="">
+            <div><h2>You Entered</h2></div>
+            <div id="submitted"></div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="/static/survey.js"></script>
+
+</body>
+</html>
+
+
+
